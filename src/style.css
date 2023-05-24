@@ -90,7 +90,7 @@ header input, header button {
 
  /* MAIN */
 main {
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
   align-items: center;
   padding: 15px;
@@ -178,6 +178,21 @@ main h3 {
 .swal2-container {
   backdrop-filter: blur(4px);
 }
+
+.prevHeader {
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  transition: all 250ms;
+}
+
+.prevHeader div {
+  margin-top: 20px;
+  transition: all 250ms;
+}
+
 
 @media(max-width: 800px) {
   #currencyDiv {

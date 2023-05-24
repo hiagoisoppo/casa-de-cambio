@@ -6,6 +6,8 @@ const inputCurrency = document.querySelector('#inputCurrency');
 const inputValue = document.querySelector('#inputValue');
 const searchButton = document.querySelector('#searchButton');
 const h3 = document.querySelector('h3');
+const main = document.querySelector('main');
+const header = document.querySelector('header');
 
 searchButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -42,6 +44,9 @@ searchButton.addEventListener('click', (event) => {
         const value = document.createElement('span');
         value.innerHTML = (inputValue.value * data.rates[rate]).toFixed(2);
         container.appendChild(value);
+
+        header.classList.remove('prevHeader')
+        main.style.display = 'flex';
       })
     }
   })

@@ -1,17 +1,14 @@
 {
-  "homepage": "https://hiagoisoppo.github.io/casa-de-cambio",
-  "name": "CasaDeCambio",
+  "name": "trybe_exercicios",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "vite --host --open",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +19,7 @@
     "vite": "^4.3.8"
   },
   "devDependencies": {
+    "eslint": "^8.41.0",
     "gh-pages": "^5.0.0"
   }
 }
